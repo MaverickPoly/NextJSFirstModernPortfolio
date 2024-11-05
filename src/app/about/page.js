@@ -33,11 +33,11 @@ const AboutPage = () => {
                 <p
                     className="block antialiased font-sans text-base leading-relaxed text-inherit font-normal !text-gray-500"
                 >
-                    Welcome to my world, where ideas come to life and passions drive every project. As you scroll through, you'll discover more than just skills
-                    and accomplishments – you’ll see the essence of what drives me. I’m dedicated to creating great programs and applications that make everyday life better,
+                    Welcome to my world, where ideas come to life and passions drive every project. As you scroll through, you&apos;ll discover more than just skills
+                    and accomplishments – you&apos;ll see the essence of what drives me. I&apos;m dedicated to creating great programs and applications that make everyday life better,
                     bridging creativity and functionality for people in every line of code. Every project tells a background, and each one is a testament to my hard work in this precious sphere.<br /><br />
 
-                    If you're interested in working with me, please don't hesitate to reach out. I'm always looking for new clients and opportunities to share my passion for technology with others, via helping them to build new applications.
+                    If you&apos;re interested in working with me, please don&apos;t hesitate to reach out. I&apos;m always looking for new clients and opportunities to share my passion for technology with others, via helping them to build new applications.
                     I can help you build anything you want, from websites and mobile applications, to powerful AI models and games.
                 </p>
             </div>
