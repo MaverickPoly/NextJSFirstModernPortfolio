@@ -21,10 +21,10 @@ export default function About() {
                                     className="text-gray-900 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
                                     About Me </h2>
                                 <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
-                                Hi! I'm Maverick, a software developer passionate about creating intuitive, user-focused digital experiences. 
+                                Hi! I&apos;m Maverick, a software developer passionate about creating intuitive, user-focused digital experiences. 
                                 With expertise in JavaScript, Flutter, Python, Godot Engine, Django, Pytorch, Tensorflow, Spring React Native and React, I enjoy bringing creative solutions 
                                 to life—from web interfaces to mobile apps. I believe in blending functionality with design, ensuring every project is as 
-                                engaging as it is effective. Let’s connect and make something great together!</p>
+                                engaging as it is effective. Let&apos;s connect and make something great together!</p>
                             </div>
                             <div className="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
                                 <div className="flex-col justify-start items-start inline-flex">
