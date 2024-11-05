@@ -1,21 +1,116 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes animate-border-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-gradient-border {
+  background-size: 200% 200%;
+  animation: animate-border-gradient 3s linear infinite;
 }
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.3rem;
+}
+
+::-moz-selection {
+  color: white;
+  background: green;
+}
+
+::selection {
+  color: white;
+  background: rgb(143, 10, 158);
+}
+
+.floating-square {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(75, 75, 75, 0.2); /* Light transparent color */
+  border-radius: 4px;
+  animation: float 6s ease-in-out infinite;
+  opacity: 0.7;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0), translateX(0);
+  }
+  50% {
+    transform: translateY(-20px) translateX(-20px);
+  } /* Adjust for floating effect */
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 15px rgba(138, 43, 226, 1), 0 0 30px rgba(0, 206, 209, 0.4),
+      0 0 45px rgba(75, 0, 130, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(138, 43, 226, 0.7),
+      0 0 50px rgba(0, 206, 209, 0.6), 0 0 70px rgba(75, 0, 130, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.5),
+      0 0 30px rgba(0, 206, 209, 0.4), 0 0 45px rgba(75, 0, 130, 0.3);
+  }
+}
+
+.shadow-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/*
+.border-animation-wrapper {
+  position: relative;
+  padding: 1rem;
+}
+
+.border-animation-wrapper::before,
+.border-animation-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 5px solid transparent;
+  border-radius: 1rem;
+  z-index: -1; ;
+  animation: borderAnimation 3s linear infinite;
+}
+
+.border-animation-wrapper::before {
+  border-color: rgba(138, 43, 226, 0.1);
+}
+
+.border-animation-wrapper::after {
+  border-color: rgba(0, 206, 209, 0.1);
+}
+
+@keyframes borderAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+*/
